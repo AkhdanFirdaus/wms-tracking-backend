@@ -1,7 +1,7 @@
 import { MongoClient } from "npm:mongodb@6.10.0";
 
-const MONGODB_URI = Deno.env.get("MONGODB_URI") || "202.83.121.173";
-const DB_NAME = Deno.env.get("DB_NAME") || "k7db";
+const MONGODB_URI = Deno.env.get("MONGODB_URI");
+const DB_NAME = Deno.env.get("DB_NAME");
 
 if (!MONGODB_URI) {
   console.error("MONGODB_URI is not set");
